@@ -1,6 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    aasm (4.12.3)
+      concurrent-ruby (~> 1.0)
     actioncable (7.0.5)
       actionpack (= 7.0.5)
       activesupport (= 7.0.5)
@@ -162,6 +164,7 @@ PLATFORMS
   x86_64-darwin-22
 
 DEPENDENCIES
+  aasm (~> 4.12)
   bootsnap
   debug
   faker

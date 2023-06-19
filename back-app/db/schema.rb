@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_17_033434) do
+ActiveRecord::Schema[7.0].define(version: 2023_06_19_031713) do
   create_table "borrowers", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -21,10 +21,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_17_033434) do
     t.integer "invoice_number"
     t.float "invoice_amount"
     t.datetime "invoice_due_date"
-    t.integer "status"
     t.integer "borrower_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "scan"
+    t.string "aasm_state"
   end
 
   add_foreign_key "invoices", "borrowers"

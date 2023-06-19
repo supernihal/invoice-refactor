@@ -1,4 +1,4 @@
-class BorrowersController < ApplicationController
+class Api::V1::BorrowersController < ApplicationController
   before_action :set_borrower, only: %i[ show update destroy ]
 
   # GET /borrowers
